@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body data-dark>
+    <!-- <audio src="./assets/alarma.mp3" controls></audio> -->
+    <header>
+      <h1 style="text-align: center; margin: 0%">Ejercicios del DOM Juan</h1>
+    </header>
+    <div class="menu" id="menu">
+      <ul class="menu-ul">
+        <li class="menu-ul__item">
+          <a href="#section1" data-scroll-spy>Reloj digita y alarma sonora</a>
+        </li>
+        <li class="menu-ul__item">
+          <a href="#section2" data-scroll-spy>Eventos del teclado</a>
+        </li>
+        <li class="menu-ul__item"><a href="#section3" data-scroll-spy>Count down</a></li>
+        <li class="menu-ul__item"><a href="#section4" data-scroll-spy>Responsibilty responsive</a></li>
+        <li class="menu-ul__item"><a href="#section5" data-scroll-spy>Responsive tester</a></li>
+        <li class="menu-ul__item"><a href="#section6" data-scroll-spy>User device info</a></li>
+        <li class="menu-ul__item"><a href="#section7" data-scroll-spy>Detecion del estado de red</a></li>
+        <li class="menu-ul__item"><a href="#section8" data-scroll-spy>Detecion de la camara</a></li>
+        <li class="menu-ul__item"><a href="#section9" data-scroll-spy>Geolocalizacion</a></li>
+        <li class="menu-ul__item"><a href="#section10" data-scroll-spy>Filtros de busquedad</a></li>
+        <li class="menu-ul__item"><a href="#section11" data-scroll-spy>Sorteo digital</a></li>
+        <li class="menu-ul__item"><a href="#section12" data-scroll-spy>Responsive slider</a></li>
+        <li class="menu-ul__item"><a href="#section13" data-scroll-spy>Video inteligente</a></li>
+        <li class="menu-ul__item"><a href="#section14" data-scroll-spy>Validaciond de formularios</a></li>
+        <li class="menu-ul__item"><a href="#section15" data-scroll-spy>Narrador</a></li>
+      </ul>
+    </div>
+    <button class="btnScrollTop">
+      <img src="./imagenes/icons8-flecha-arriba-48.png" />
+    </button>
+    <button id="btn-menu-hamburguesa">
+      <img src="./imagenes/icons8-menú-128.png" />
+    </button>
+    <button class="btn-dark-mode">🌑</button>
+<main>
+    <section class="section " data-scroll-spy id="section1">
+      <h2 class="text-center">Reloj digita y alarma sonora</h2>
+
+      <div id="section1-container__reloj"></div>
+      <div class="btn-reloj">
+        <button id="iniciar-reloj">Iniciar Reloj</button>
+        <button id="detener-reloj">Detener Reloj</button>
+        <button id="iniciar-alarma">Iniciar Alarma</button>
+        <button id="detener-alarma">Detener Alarma</button>
+      </div>
+    </section>
+    <section class="section " data-scroll-spy id="section2">
+      <h2 class="text-center">Eventos del teclado</h2>
+      <article class="section2-content">
+        <div class="section2-content__div"></div>
+      </article>
+    </section>
+    <section class="section " data-scroll-spy id="section3">
+      <h2 class="text-center">Count down</h2>
+      <h1 id="countdowndate"></h1>
+    </section>
+    <section class="section " data-scroll-spy id="section4">
+      <h2 class="text-center">Responsibilty responsive</h2>
+      <article id="section__article1"></article>
+      <article id="section__article2"></article>
+    </section>
+
+    <section class="section " data-scroll-spy id="section5">
+      <h2 class="text-center">Responsive tester</h2>
+      <form id="responsive-tester__form">
+        <label>
+          Url
+          <br />
+          <input type="text" name="url" id=""
+        /></label>
+        <label>
+          Width
+          <br />
+          <input type="text" name="width" id="width"
+        /></label>
+        <label>
+          Height
+          <br />
+          <input type="text" name="height" id="height"
+        /></label>
+        <button id="btnOpen">Probar</button>
+        <button type="button" id="btnClose">Cerrar</button>
+      </form>
+    </section>
+
+    <section class="section " data-scroll-spy id="section6">
+
+    </section>
+    <section class="section " data-scroll-spy id="section7">
+      <h2>Detecion del estado de red</h2>
+    </section>
+
+    <section class="section " data-scroll-spy id="section8">
+      <h2>Detecion de la camara</h2>
+      <video id="webcam" controls></video>
+    </section>
+
+    <section class="section" data-scroll-spy id="section9">
+      <h2>Geolocalizacion</h2>
+      <div id="map"></div>
+    </section>
+    <section class="section" style="overflow: scroll;"  data-scroll-spy id="section10">
+      <h2>Filtros de busquedad</h2>
+      <input id="input-search" type="search">
+      <div class="cards">
+        <figure class="card"><img src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="">
+        <figcaption>Naturaleza</figcaption>
+        </figure>
+        <figure class="card"><img src="https://fastly.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI" alt="">
+        <figcaption>Animales</figcaption>
+        </figure>
+        <figure class="card"><img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="">
+        <figcaption>Cosas</figcaption>
+        </figure>
+        <figure class="card"><img src="https://picsum.photos/600/600" alt="">
+        <figcaption>Any</figcaption>
+        </figure>
+        <figure class="card"><img src="https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU" alt="">
+        <figcaption>Construccion</figcaption>
+        </figure>
+        <figure class="card"><img src="https://picsum.photos/600/600" alt="">
+        <figcaption>Aventura</figcaption>
+        </figure>
+        <figure class="card"><img src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA" alt="">
+        <figcaption>Vida</figcaption>
+        </figure>
+        <figure class="card"><img src="https://picsum.photos/600/600" alt="">
+        <figcaption>Verde</figcaption>
+        </figure>
+        <figure class="card"><img src="https://picsum.photos/600/600" alt="">
+        <figcaption>Tierno</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" data-scroll-spy id="section11">
+      <h2>Sorteo digital</h2>
+<ul>
+  <li class="value">JavaScript</li>
+  <li class="value">PHP</li>
+  <li class="value">Python</li>
+  <li class="value">Java</li>
+  <li class="value">Ruby</li>
+  <li class="value">Go</li>
+  <li class="value">C</li>
+  <li class="value">C#</li>
+  <li class="value">Perl</li>
+  <li class="value">Node js</li>
+</ul>
+<button id="win-btn">Ganador</button>
+    </section>
+
+
+    <section  class="section" data-scroll-spy id="section12">
+      <h2>Responsive slider</h2>
+      <div class="slider">
+        <div class="slider-slides">
+          <div class="slider-slide active"><img src="https://picsum.photos/seed/picsum/200/200">
+          </div>
+          <div class="slider-slide"><img src="https://picsum.photos/400/400?random=3">
+          </div>
+          <div class="slider-slide">
+            <h2>Texto</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate autem, aliquid officia nostrum quisquam modi minima harum blanditiis neque similique quaerat perspiciatis odit voluptatibus aliquam nihil velit fugiat nisi accusamus?</p>
+          </div>
+          <div class="slider-slide">
+            <img src="https://picsum.photos/400/400?random=1">
+          </div>
+        </div>
+        <div class="slider-btns">
+          <a class="prev" href="#">&laquo;</a>
+          <a class="next" href="#">&raquo;</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section style="overflow: scroll;" class="section" id="section13">
+      <h2>Video inteligente</h2>
+      <video src="./assets/video.mp4" controls muted loop data-video-smart></video>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <video src="./assets/video.mp4" controls muted  loop data-video-smart></video>
+    </section>
+    <section class="section" id="section14">
+      <h2>Validacion de formularios</h2>
+      <form action="" class="form-validation">
+        <input type="text"  name="name" placeholder="Ingrese su nombre porfavor"  title="El nombre  solo puede tener letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+        <input type="email"  name="email" placeholder="Ingrese su correo porfavor" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="El correo debe contener letras,numeros @" required>
+        <input type="subject" name="asunto" placeholder="Asunto a tratar" required title="Debe escribir el asunto a tratar">
+        <input type="number"  name="age" placeholder="edad" required title="Debes seleccionar un valor diferente a 0" pattern="^([1-9][0-9]?|100)$">
+        <textarea name="comments" required title="Tu comentario no puede tener mas 256 caracteres"  cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$"></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+      <div class="loader none">
+        <img src="./assets/oval.svg" alt="Cargando">
+      </div>
+
+      <div class="response none">
+        <p>Los datos han sido enviados</p>
+      </div>
+    </section>
+
+    <section class="section" id="section15">
+      <h2>Narrador</h2>
+      <select id="speech-select">
+        <option value="">--------Elije una voz---------</option>
+      </select>
+      <textarea id="speech-text-area" placeholder="Ingrese el texto que desea que se ecuche"></textarea>
+      <br>
+      <button id="speech-btn">Leer texto</button>
+    </section>
+  </main>
+
+    <script src="./js/animes.js"></script>
+  </body>
+</html>
